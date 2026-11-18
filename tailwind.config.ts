@@ -16,6 +16,10 @@ const config: Config = {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui", "sans-serif"],
+        serif: ["var(--font-serif)", "ui-serif", "Georgia", "serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -50,6 +54,24 @@ const config: Config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Pinterest-inspired warm editorial palette
+        sand: {
+          50: "#FDFBF7",
+          100: "#FAF6EF",
+          200: "#F3ECE0",
+          300: "#E8DEC8",
+          400: "#D3C2A3",
+          500: "#B8A07A",
+        },
+        terracotta: {
+          DEFAULT: "#D96B43",
+          hover: "#C0562F",
+          light: "#FBF2ED",
+        },
+        sage: {
+          DEFAULT: "#587B6D",
+          light: "#EFF4F1",
+        },
         // Indian marketplace accents
         amazon: {
           DEFAULT: "#FF9900",
@@ -76,6 +98,10 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      boxShadow: {
+        pin: "0 1px 20px 0 rgba(0, 0, 0, 0.05), 0 1px 3px 0 rgba(0, 0, 0, 0.03)",
+        'pin-hover': "0 20px 40px -15px rgba(0, 0, 0, 0.12), 0 0 1px 1px rgba(0, 0, 0, 0.04)",
       },
       keyframes: {
         "accordion-down": {
